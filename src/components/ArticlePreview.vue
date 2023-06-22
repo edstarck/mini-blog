@@ -16,7 +16,7 @@
 
 <script>
 export default {
-  name: 'MbArticle',
+  name: 'MbArticlePreview',
 }
 </script>
 

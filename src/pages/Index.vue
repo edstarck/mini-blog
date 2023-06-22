@@ -1,21 +1,21 @@
 <template>
   <div class="home">
-    <div class="cards"></div>
+    <mb-blog :api-url="apiUrl" />
   </div>
 </template>
 
 <script>
-import {actionsTypes} from '@/store/modules/blog'
+import MbBlog from '@/components/Blog.vue'
 
 export default {
   name: 'IndexPage',
-  methods: {
-    fetchBlog() {
-      this.$store.dispatch(actionsTypes.getBlog, {apiUrl: '/'})
-    },
+  components: {
+    MbBlog,
   },
-  mounted() {
-    this.fetchBlog()
+  data() {
+    return {
+      apiUrl: '/',
+    }
   },
 }
 </script>
