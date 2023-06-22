@@ -1,0 +1,26 @@
+.mb-loader {
+  width: 100%;
+  height: 100vh;
+
+  @include flexbox($placeContent: center, $placeItems: center);
+
+  &__chevron {
+    @include rectangle(48px, 48px);
+
+    animation: circle 1s linear infinite;
+
+    svg {
+      width: 100%;
+      height: 100%;
+    }
+  }
+}
+
+@keyframes circle {
+  0% {
+    transform: translate(-50%, -50%) rotate(0deg);
+  }
+  100% {
+    transform: translate(-50%, -50%) rotate(360deg);
+  }
+}

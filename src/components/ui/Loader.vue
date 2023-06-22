@@ -1,6 +1,8 @@
 <template>
   <section class="mb-loader">
-    <chevron-loader-icon />
+    <div class="mb-loader__chevron">
+      <chevron-loader-icon />
+    </div>
   </section>
 </template>
 

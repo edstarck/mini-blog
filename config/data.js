@@ -1,10 +1,10 @@
 import Article from '@/models/Article'
-import {articlesTotal} from '@/helpers/vars'
+import {FETCH_POSTS_LIMIT} from '@/helpers/constants/PostsConstant'
 import {uuid} from '@/helpers/utils'
 
-export const data = []
+const data = []
 
-for (let i = 1; i <= articlesTotal; i++) {
+const generateArticle = (i) => {
   const options = {
     id: uuid(),
     title: `Заголовок ${i}`,
@@ -13,7 +13,11 @@ for (let i = 1; i <= articlesTotal; i++) {
     reactions: Math.round(Math.random() * 100),
   }
 
-  data.push(new Article(options))
+  return new Article(options)
+}
+
+for (let i = 1; i <= FETCH_POSTS_LIMIT; i++) {
+  data.push(generateArticle(i))
 }
 
 export default data

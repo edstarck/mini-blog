@@ -5,7 +5,7 @@
 </template>
 
 <script>
-import MbBlog from '@/components/Blog.vue'
+import MbBlog from '@/components/Blog'
 
 export default {
   name: 'IndexPage',
