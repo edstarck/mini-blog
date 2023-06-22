@@ -2,6 +2,6 @@ export default [
   {
     path: '/articles/:slug',
     name: 'article',
-    component: () => import('@/components/Article.vue'),
+    component: () => import('@/components/ArticleCard.vue'),
   },
 ]
