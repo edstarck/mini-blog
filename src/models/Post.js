@@ -1,5 +1,5 @@
-export default class Article {
-  constructor({id, title, src, body, reactions}) {
+export default class Post {
+  constructor(id, title, src, body, reactions) {
     this.id = id
     this.title = title
     this.src = src

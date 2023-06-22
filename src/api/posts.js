@@ -6,7 +6,7 @@ import {FETCH_POSTS_LATENCY} from '@/helpers/constants/PostsConstant'
 
 const fetchPosts = async (apiUrl) => {
   await sleep(FETCH_POSTS_LATENCY)
-  return axios.get(apiUrl).then(() => ({response: {data}}))
+  return axios.get(apiUrl).then(() => ({data}))
 }
 
 export default {

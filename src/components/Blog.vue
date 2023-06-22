@@ -23,7 +23,7 @@
 
 <script>
 import {mapState} from 'vuex'
-import {actionsTypes} from '@/store/modules/posts'
+import {actionsTypes} from '@/store/modules/posts/actionTypes'
 
 import MbLoader from '@/components/ui/Loader'
 
