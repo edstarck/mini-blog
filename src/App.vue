@@ -5,9 +5,7 @@
     </template>
 
     <template v-else>
-      <main>
-        <router-view />
-      </main>
+      <router-view />
     </template>
   </div>
 </template>
@@ -23,4 +21,13 @@ export default {
     },
   },
 }
+
+// TODO:
+/*
+  1. Поменять data.js -> место каталога и поменять на внешний???
+  4. Добавить сохранение в localstorage
+  5. Анимация
+  6. Добавить в сторе categories
+  8. сделать source-map
+*/
 </script>

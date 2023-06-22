@@ -1,2 +1,12 @@
+@import 'utils/varibles';
+@import 'utils/mixins';
+
 @import 'base/base';
 @import 'base/typography';
+@import 'base/layout';
+
+// pages
+@import 'pages/index';
+
+// components
+@import 'components/ui/mbLoader';
